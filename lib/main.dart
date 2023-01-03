@@ -56,6 +56,9 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const SecondScreen()));
   }
 
   @override
@@ -107,6 +110,24 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class SecondScreen extends StatefulWidget {
+  const SecondScreen({Key? key}) : super(key: key);
+
+  @override
+  State<SecondScreen> createState() => _SecondScreenState();
+}
+
+class _SecondScreenState extends State<SecondScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text('New Screen',style: Theme.of(context).textTheme.headline2),
+      ),
     );
   }
 }
