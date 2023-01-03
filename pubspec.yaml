@@ -23,6 +23,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  permission_handler: ^10.2.0
+  saver_gallery: ^1.0.5
+  connectivity_plus: ^3.0.2
+  image_picker: ^0.8.6
+  photo_manager: ^2.5.2
+  google_mobile_ads: ^2.3.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
